@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>工程项目选择</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/buttons.css">
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../css/selectProjname.css">
+    <script type="text/JavaScript" src="../js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../script/api.js"></script>
+    <script type="text/JavaScript" src="../js/jquery-ui.js"></script>
+    <style>	
+    </style>
+    <script type="text/javascript">
+    apiready = function(){
+		$("#cancel").click(function(){
+			api.closeFrame({
+            	name:'selectProjname'
+            });
+		});
+	};
+	</script>
+</head>
+<body>
+	<div class="proj">
+	<h4>选择工程名称：</h4>
+	<div class="select">
+		<input type="checkbox"  class='selectall'  checked="checked">全选
+		<input type="checkbox"  class='selectproj'  checked="checked"><output class="projname" id="projname"></output>
+	</div>
+	<div>
+	<button class="button button-primary button-rounded button-small ">确定</button>
+	<button class="button button-primary button-rounded button-small " id="cancel">取消</button>
+		
+	</div>
+	</div>
+</body>
+</html>
